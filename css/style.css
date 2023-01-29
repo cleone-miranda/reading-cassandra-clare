@@ -1,0 +1,119 @@
+* {
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* header */
+h1 {
+    font-size: 1.4em;
+    margin: 5px 0;
+    text-align: center;
+}
+
+/* menu */
+nav {
+    display: flex;
+    padding: 5px 0;
+}
+
+ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+
+/* main */
+main {
+    margin: 5px;
+}
+
+/* table */
+table {
+    border: 3px solid;
+    border-collapse: collapse;
+    table-layout: fixed;
+    /* width: 300px; */
+}
+
+caption {
+    margin: 5px 0;
+}
+
+thead th:nth-child(1) {
+    width: 100px;
+}
+
+thead th:nth-child(2) {
+    width: 100px;
+}
+
+thead th:nth-child(3) {
+    width: 50px;
+}
+
+thead th:nth-child(4) {
+    width: 50px;
+}
+
+th,
+td {
+    font-size: .58rem;
+    border: 1px solid;
+    padding: 5px;
+}
+
+td {
+    text-align: center;
+}
+
+.read {
+    background-color: green;
+    border-color:black;
+    color: black;
+}
+
+.reading {
+    background-color: yellow;
+    border-color:black;
+    color: black;
+}
+
+.to-read {
+    background-color: red;
+    border-color:black;
+    color: black;
+}
+
+.to-be-released {
+    background-color: gray;
+    border-color:black;
+    color: black;
+}
+
+@media screen and (min-width: 600px){
+    table {
+        width: 600px;
+    }
+
+    nav {
+        display: flex;
+        padding: 5px 0;
+    }
+    
+    ul {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 5px;
+    }
+}
