@@ -5,203 +5,291 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
     <title>Reading Cassandra Clare</title>
+
+    <!-- bootstrap icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <!-- style -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+
+    <!-- script -->
+    <script src="./assets/js/script.js" defer></script>
 </head>
 
 <body>
-
+    <!-- Make a heading here with a burger menu -->
     <!-- header -->
-    <header>
-        <h1>Reading Cassandra Clare</h1>
-        <hr>
-        <!-- menu -->
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="tmi.html">TMI</a></li>
-                <li><a href="tid.html">TDI</a></li>
-                <li><a href="tda.html">TDA</a></li>
-                <li><a href="tec.html">TEC</a></li>
-                <li><a href="tlh.html">TLH</a></li>
-                <li><a href="twp.html">TWP</a></li>
-                <li><a href="chronicles.html">Chronicles</a></li>
-            </ul>
-        </nav>
+    <header id="header" class="header">
+        <div class="container">
+            <h1 class="logo">Reading Cassandra Clare</h1>
+
+            <!-- menu -->
+            <div class="burger" onclick="showAndHideBurgerMenu()">
+                <i class="bi bi-list"></i>
+            </div>
+        </div>
+
+        <div id="container" class="container displayNone" onmouseleave="showAndHideBurgerMenu()">
+
+            <nav>
+                <ul>
+                    <li><a href="index.html" target="_self">Home</a></li>
+                    <li><a href="#tmi" target="_self" onclick="showAndHideBurgerMenu()">The Mortal Instruments</a></li>
+                    <li><a href="#tid">The Infernal Devices</a></li>
+                    <li><a href="#tda">The Dark Artifices</a></li>
+                    <li><a href="#tec">The Eldest Curses</a></li>
+                    <li><a href="#tlh">The Last Hours</a></li>
+                    <li><a href="#twp">The Wicked Power</a></li>
+                    <li><a href="#chronicles">Chronicles</a></li>
+                </ul>
+            </nav>
+        </div>
         <!-------->
-        <hr>
+
     </header>
     <!------------>
 
     <!-- main -->
     <main>
-        <!-- add a h2 here -->
 
-        <table>
-            <caption>
-                A list of all Cassandra Clare's Books
-            </caption>
-            <thead class="table-header">
-                <tr>
-                    <th scope="col">Book Name</th>
-                    <th scope="col">Series</th>
-                    <th scope="col">Year</th>
-                    <th scope="col">Status</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <th scope="row">City of Bones</th>
-                    <td>The Mortal Instruments</td>
-                    <td>2007</td>
-                    <td class="read">Read</td>
-                </tr>
-                <tr>
-                    <th scope="row">City of Ashes</th>
-                    <td>The Mortal Instruments</td>
-                    <td>2008</td>
-                    <td class="read">Read</td>
-                </tr>
-                <tr>
-                    <th scope="row">City of Glass</th>
-                    <td>The Mortal Instruments</td>
-                    <td>2009</td>
-                    <td class="read">Read</td>
-                </tr>
-                <tr>
-                    <th scope="row">Clockwork Angel</th>
-                    <td>The Infernal Devices</td>
-                    <td>2010</td>
-                    <td class="read">Read</td>
-                </tr>
-                <tr>
-                    <th scope="row">City of Fallen Angels</th>
-                    <td>The Mortal Instruments</td>
-                    <td>2011</td>
-                    <td class="read">Read</td>
-                </tr>
-                <tr>
-                    <th scope="row">Clockwork Prince</th>
-                    <td>The Infernal Devices</td>
-                    <td>2011</td>
-                    <td class="read">Read</td>
-                </tr>
-                <tr>
-                    <th scope="row">City of Lost Souls</th>
-                    <td>The Mortal Instruments</td>
-                    <td>2012</td>
-                    <td class="reading">Reading</td>
-                </tr>
-                <tr>
-                    <th scope="row">Clockwork Princess</th>
-                    <td>The Infernal Devices</td>
-                    <td>2013</td>
-                    <td class="to-read">To Read</td>
-                </tr>
-                <tr>
-                    <th scope="row">The Bane Chronicles</th>
-                    <td>Chronicles</td>
-                    <td>2014</td>
-                    <td class="to-read">To Read</td>
-                </tr>
-                <tr>
-                    <th scope="row">City of Heavenly Fire</th>
-                    <td>The Mortal Instruments</td>
-                    <td>2014</td>
-                    <td class="to-read">To Read</td>
-                </tr>
-                <tr>
-                    <th scope="row">Tales From the Shadowhunter Academy</th>
-                    <td>Chronicles</td>
-                    <td>2015</td>
-                    <td class="to-read">To Read</td>
-                </tr>
-                <tr>
-                    <th scope="row">A History of Notable Shadowhunters and Denizens of Downworld</th>
-                    <td>Chronicles</td>
-                    <td>2016</td>
-                    <td class="to-read">To Read</td>
-                </tr>
-                <tr>
-                    <th scope="row">Lady Midnight</th>
-                    <td>The Dark Artifices</td>
-                    <td>2016</td>
-                    <td class="to-read">To Read</td>
-                </tr>
-                <tr>
-                    <th scope="row">Lord of Shadows</th>
-                    <td>The Dark Artifices</td>
-                    <td>2017</td>
-                    <td class="to-read">To Read</td>
-                </tr>
-                <tr>
-                    <th scope="row">Queen of Air and Darkness</th>
-                    <td>The Dark Artifices</td>
-                    <td>2018</td>
-                    <td class="to-read">To Read</td>
-                </tr>
-                <tr>
-                    <th scope="row">The Red Scrolls of Magic</th>
-                    <td>The Eldest Curses</td>
-                    <td>2019</td>
-                    <td class="to-read">To Read</td>
-                </tr>
-                <tr>
-                    <th scope="row">Ghosts of the Shadow Market: An Anthology of Tales</th>
-                    <td>Chronicles</td>
-                    <td>2016</td>
-                    <td class="to-read">To Read</td>
-                </tr>
-                <tr>
-                    <th scope="row">Chain of Gold</th>
-                    <td>The Last Hours</td>
-                    <td>2020</td>
-                    <td class="to-read">To Read</td>
-                </tr>
-                <tr>
-                    <th scope="row">The Lost Book of White</th>
-                    <td>The Eldest Curses</td>
-                    <td>2020</td>
-                    <td class="to-read">To Read</td>
-                </tr>
-                <tr>
-                    <th scope="row">Chain of Iron</th>
-                    <td>The Last Hours</td>
-                    <td>2021</td>
-                    <td class="to-read">To Read</td>
-                </tr>
-                <tr>
-                    <th scope="row">Chain of Thorns</th>
-                    <td>The Last Hours</td>
-                    <td>2023</td>
-                    <td class="to-be-released">To be released</td>
-                </tr>
-                <tr>
-                    <th scope="row">The Black Volume of the Dead</th>
-                    <td>The Eldest Curses</td>
-                    <td>TBD</td>
-                    <td class="to-be-released">To be released</td>
-                </tr>
-                <tr>
-                    <th scope="row">-</th>
-                    <td>The Wicked Power</td>
-                    <td>TBD</td>
-                    <td class="to-be-released">To be released</td>
-                </tr>
-                <tr>
-                    <th scope="row">-</th>
-                    <td>The Wicked Power</td>
-                    <td>TBD</td>
-                    <td class="to-be-released">To be released</td>
-                </tr>
-                <tr>
-                    <th scope="row">-</th>
-                    <td>The Wicked Power</td>
-                    <td>TBD</td>
-                    <td class="to-be-released">To be released</td>
-                </tr>
-            </tbody>
-        </table>
+        <section class="book-list">
+            <!-- tmi -->
+            <div id="tmi" class="book-container">
+                <h2>The Mortal Instruments</h2>
+                <div class="card-container">
+                    <div class="card">
+                        <div class="img">
+                            <img src="./assets/img/tmi/city-of-bones.jpeg" alt="City Of Bones">
+                            <legend>City Of Bones</legend>
+                        </div>
+
+                    </div>
+                    <div class="card">
+                        <div class="img">
+                            <img src="./assets/img/tmi/city-of-ashes.jpeg" alt="City Of Ashes">
+                            <legend>City Of Ashes</legend>
+                        </div>
+
+                    </div>
+                    <div class="card">
+                        <div class="img">
+                            <img src="./assets/img/tmi/city-of-glass.jpeg" alt="City Of Glass">
+                            <legend>City Of Glass</legend>
+                        </div>
+
+                    </div>
+                    <div class="card">
+                        <div class="img">
+                            <img src="./assets/img/tmi/city-of-fallen-angels.jpeg" alt="City Of Fallen Angels">
+                            <legend>City Of Fallen Angels</legend>
+                        </div>
+
+                    </div>
+                    <div class="card">
+                        <div class="img">
+                            <img src="./assets/img/tmi/city-of-lost-souls.jpeg" alt="City Of Lost Souls">
+                            <legend>City Of Lost Souls</legend>
+                        </div>
+
+                    </div>
+                    <div class="card">
+                        <div class="img">
+                            <img src="./assets/img/tmi/city-of-heavenly-fire.jpeg" alt="City Of Heavenly Fire">
+                            <legend>City Of Heavenly Fire</legend>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- tid -->
+            <div id="tid" class="book-container">
+                <h2>The Infernal Devices</h2>
+                <div class="card-container">
+                    <div class="card">
+                        <div class="img">
+                            <img src="./assets/img/tid/clockwork-angel.jpg" alt="Clockwork Angel">
+                            <legend>Clockwork Angel</legend>
+                        </div>
+
+                    </div>
+                    <div class="card">
+                        <div class="img">
+                            <img src="./assets/img/tid/clockwork-prince.jpg" alt="Clockwork Prince">
+                            <legend>Clockwork Prince</legend>
+                        </div>
+
+                    </div>
+                    <div class="card">
+                        <div class="img">
+                            <img src="./assets/img/tid/clockwork-princess.jpg" alt="Clockwork Princess">
+                            <legend>Clockwork Princess</legend>
+                        </div>
+
+                    </div>
+
+
+                </div>
+
+            </div>
+
+            <!-- tda -->
+            <div id="tda" class="book-container">
+                <h2>The Dark Artifices</h2>
+                <div class="card-container">
+                    <div class="card">
+                        <div class="img">
+                            <img src="./assets/img/tda/lady-midnight.jpg" alt="Lady Midnight">
+                            <legend>Lady Midnight</legend>
+                        </div>
+
+                    </div>
+
+                    <div class="card">
+                        <div class="img">
+                            <img src="./assets/img/tda/lord-of-shadows.jpg" alt="Lord Shadow">
+                            <legend>Lord Shadow</legend>
+                        </div>
+
+                    </div>
+
+                    <div class="card">
+                        <div class="img">
+                            <img src="./assets/img/tda/queen-of-air-and-darkness.jpg" alt="Queen of Air and Darkness">
+                            <legend>Queen of Air and Darkness</legend>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- tec -->
+            <div id="tec" class="book-container">
+                <h2>The Eldest Curses</h2>
+                <div class="card-container">
+                    <div class="card">
+                        <div class="img">
+                            <img src="./assets/img/tec/the-red-scrolls-of-magic.jpg" alt="The Red Scrolls of Magic">
+                            <legend>The Red Scrolls of Magic</legend>
+                        </div>
+
+                    </div>
+                    <div class="card">
+                        <div class="img">
+                            <img src="./assets/img/tec/the-lost-book-of-the-white.jpg" alt="The Lost Book of White">
+                            <legend>The Lost Book of White</legend>
+                        </div>
+
+                    </div>
+
+                    <div class="card">
+                        <div class="img">
+                            <img src="./assets/img/tec/the-black-volume-of-dead.jpg" alt="The Black Volume of Dead">
+                            <legend>The Black Volume of Dead</legend>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- thl -->
+            <div id="tlh" class="book-container">
+                <h2>The Last Hours</h2>
+                <div class="card-container">
+                    <div class="card">
+                        <div class="img">
+                            <img src="./assets/img/tlh/chain-of-gold.jpg" alt="Chain of Gold">
+                            <legend>Chain of Gold</legend>
+                        </div>
+
+                    </div>
+                    <div class="card">
+                        <div class="img">
+                            <img src="./assets/img/tlh/chain-of-iron.jpg" alt="Chain of Iron">
+                            <legend>Chain of Iron</legend>
+                        </div>
+
+                    </div>
+                    <div class="card">
+                        <div class="img">
+                            <img src="./assets/img/tlh/chain-of-thorns.jpg" alt="Chain of Thorns">
+                            <legend>Chain of Thorns</legend>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- twp -->
+            <div id="twp" class="book-container">
+                <h2>The Wicked Power</h2>
+                <div class="card-container">
+                    <div class="card">
+                        <div class="img">
+                            <img src="./assets/img/twp/.jpeg" alt="">
+                            <legend></legend>
+                        </div>
+
+                    </div>
+                    <div class="card">
+                        <div class="img">
+                            <img src="./assets/img/twp/.jpeg" alt="">
+                            <legend></legend>
+                        </div>
+
+                    </div>
+                    <div class="card">
+                        <div class="img">
+                            <img src="./assets/img/twp/.jpeg" alt="">
+                            <legend></legend>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- chronicles -->
+            <div id="chronicles" class="book-container">
+                <h2>Chronicles</h2>
+                <div class="card-container">
+                    <div class="card">
+                        <div class="img">
+                            <img src="./assets/img/chronicles/the-bane-chronicles.jpg" alt="The Bane Chronicles">
+                            <legend>The Bane Chronicles</legend>
+                        </div>
+
+                    </div>
+                    <div class="card">
+                        <div class="img">
+                            <img src="./assets/img/chronicles/tales-from-shadowhunter-academy.jpg" alt="Tales from the Shadowhunter Academy">
+                            <legend>Tales from the Shadowhunter Academy</legend>
+                        </div>
+
+                    </div>
+                    <div class="card">
+                        <div class="img">
+                            <img src="./assets/img/chronicles/a-history-of-notable-shadowhunters-and-denizens-of-downwold.jpg" alt="A History of Notable Shadowhunters and Denizens of Downworld">
+                            <legend>A History of Notable Shadowhunters and Denizens of Downworld</legend>
+                        </div>
+
+                    </div>
+                    <div class="card">
+                        <div class="img">
+                            <img src="./assets/img/chronicles/ghost-of-the-shadow-market.jpg" alt="Ghosts of the Shadow Market: An Anthology of Tales">
+                            <legend>Ghosts of the Shadow Market: An Anthology of Tales</legend>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            
+        </section>
+
+        
     </main>
     <!---------->
 </body>
